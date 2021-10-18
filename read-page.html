@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read page</title>
+    <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/read-page.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="sidebar">
+            <ul id="sidebar-menu">
+                <br><br><br>
+                <li><a href="">
+                        <i class="ti-home"></i>
+                        <label>Home</label>
+                    </a></li>
+                <li class="here"><a href="">
+                        <i class="ti-book"></i>
+                        <label>Reading</label>
+                    </a></li>
+                <li><a href="">
+                        <i class="ti-notepad"></i>
+                        <label>Notebook</label>
+                    </a></li>
+                <li><a href="">
+                        <i class="ti-settings"></i>
+                        <label>Settings</label>
+                    </a></li>
+                <li><a href="">
+                        <i class="ti-user"></i>
+                        <label>Log out</label>
+                    </a></li>
+            </ul>
+        </div>
+        <div id="content-layout">
+            <div id="content">
+                <div id="content-story">
+                    <div>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, tempore molestias! Minus
+                        excepturi
+                        alias quos dolore sapiente porro veniam quas adipisci at officiis maxime accusamus, a
+                        eligendi
+                        voluptatem, perspiciatis atque placeat. Consequuntur, eum? Laboriosam, molestias. Optio
+                        beatae
+                        maxime tempora, commodi quia pariatur aliquam perferendis, incidunt aperiam officiis
+                        obcaecati
+                        iste recusandae quod? Et quia accusantium laudantium velit possimus similique suscipit a
+                        nihil,
+                        sunt cum soluta adipisci natus deleniti inventore recusandae ea cupiditate dolor error,
+                        obcaecati fugiat. Suscipit provident omnis voluptatum doloremque iste, laudantium doloribus,
+                        quaerat enim soluta sed ea quasi tempore blanditiis perspiciatis officia. Molestias beatae
+                        debitis voluptatibus repellendus iste itaque dolor at fuga officia labore voluptatem,
+                        maiores
+                        pariatur placeat totam soluta sequi necessitatibus animi possimus accusantium inventore a
+                        sint
+                        iusto. Reprehenderit pariatur adipisci deleniti aspernatur vitae nam, explicabo voluptatem
+                        ipsam
+                        sint inventore ipsum dolores culpa ea ex magni iusto molestiae odit suscipit tempore natus
+                        beatae? Odio saepe aut at! Perspiciatis magnam eveniet tempore quos accusantium vel quo ab
+                        distinctio nam aspernatur vitae doloribus, voluptatibus aperiam veritatis saepe maxime nulla
+                        quas placeat minima mollitia neque sed! Similique reprehenderit deleniti iure libero ad nisi
+                        doloremque rerum facere ullam, voluptates inventore recusandae incidunt voluptate nostrum
+                        deserunt quas amet provident tempore ipsum? Voluptas, harum.</p>
+                </div>
+                <div id="content-tab">
+                    <div id="content-tab-nav">
+                        <ul>
+                            <button class="tablinks" onclick="openContentTap(event, 'Quest')">Quest</button>
+                            <button class="tablinks" onclick="openContentTap(event, 'Vocabulary')">Vocabulary</button>
+                            <button class="tablinks" onclick="openContentTap(event, 'Note')">Note</button>
+                        </ul>
+                    </div>
+                    <div id="content-tab-body">
+                        <ul id="body-idiom" class="tabcontent">
+                            <div>
+                                <p class="idiom-idiom" style="font-size: 40; font-weight: bold;">Break a leg!</p>
+                                <p class="idiom-meaning">Good luck! (an expression that is used in theater
+                                    performances)</p>
+                            </div>
+                        </ul>
+                        <ul id="Quest" class="tabcontent">
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis eligendi ducimus saepe totam ipsam corrupti, quia debitis, qui quae
+                                    vero quibusdam alias officiis reprehenderit necessitatibus asperiores architecto
+                                    exercitationem cum facilis unde nemo incidunt neque. Temporibus exercitationem quis
+                                    quasi eveniet! Repudiandae id earum, corrupti, recusandae nobis fugiat alias laborum
+                                    ipsam pariatur iusto esse, non omnis aspernatur! Accusamus adipisci porro explicabo
+                                    earum quam. Odit, minima aspernatur? Excepturi quas iusto quae cum. Inventore, et,
+                                    aliquam ut mollitia iusto, temporibus fugiat aliquid facere earum unde quia minima?
+                                    Nulla delectus ullam dignissimos! Quis provident error, perspiciatis culpa fuga
+                                    dolorum pariatur, illo aperiam aliquid placeat consectetur!</p>
+                            </li>
+                        </ul>
+                        <ul id="Vocabulary" class="tabcontent">
+                            <li>
+                                <p class="vocabulary-word">Break a leg!</p>
+                                <p class="vocabulary-meaning">Good luck! (an expression that is used in theater
+                                    performances)</p>
+                            </li>
+                        </ul>
+                        <ul id="Note" class="tabcontent">
+                            <li>
+                                <p class="vocabulary-word">Break a leg!</p>
+                                <p class="vocabulary-meaning">Good luck! (an expression that is used in theater
+                                    performances)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openContentTap(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
